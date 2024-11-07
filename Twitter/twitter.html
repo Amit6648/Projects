@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <div class="box flex font-sans overflow-auto h-screen w-screen">
+      <div class="section1 bg-black h-screen w-[26rem]">
+        <div class="icons text-white flex justify-center">
+          <ul class="w-[15rem] flex flex-col space-y-6 p-4 ml-20">
+            <li class="x-sign text-white">
+              <svg
+                class="h-[1.9rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+              >
+                <g>
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  ></path>
+                </g>
+              </svg>
+            </li>
+            <li class="home flex items-center gap-6 text-xl font-semibold">
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z"
+                  ></path>
+                </g>
+              </svg>
+              Home
+            </li>
+            <li class="search flex items-center gap-6 text-xl font-semibold">
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"
+                  ></path>
+                </g>
+              </svg>
+              Search
+            </li>
+            <li class="notify flex items-center gap-6 text-xl font-semibold">
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"
+                  ></path>
+                </g>
+              </svg>
+              Notifications
+            </li>
+            <li class="message flex items-center gap-6 text-xl font-semibold">
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"
+                  ></path>
+                </g>
+              </svg>
+              Messages
+            </li>
+            <li
+              class="grok text-white flex items-center gap-6 text-xl font-semibold"
+            >
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <g clip-path="url(#6-clip0_2592_269)" clip-rule="evenodd">
+                    <path
+                      d="M18 4.1H6c-1.05 0-1.9.85-1.9 1.9v12c0 1.05.85 1.9 1.9 1.9h12c1.05 0 1.9-.85 1.9-1.9V6c0-1.05-.85-1.9-1.9-1.9zM6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4z"
+                    ></path>
+                    <path
+                      d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="6-clip0_2592_269">
+                      <rect height="20" rx="1" width="20" x="2" y="2"></rect>
+                    </clipPath>
+                  </defs>
+                </g>
+              </svg>
+              Grok
+            </li>
+            <li class="bookmarks flex items-center gap-6 text-xl font-semibold">
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"
+                  ></path>
+                </g>
+              </svg>
+              Bookmarks
+            </li>
+            <li class="commuty flex items-center gap-6 text-xl font-semibold">
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z"
+                  ></path>
+                </g>
+              </svg>
+              Communities
+            </li>
+            <li
+              class="premium text-white flex items-center gap-6 text-xl font-semibold"
+            >
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  ></path>
+                </g>
+              </svg>
+              Premium
+            </li>
+            <li
+              class="orgs text-white flex items-center gap-6 text-xl font-semibold"
+            >
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z"
+                  ></path>
+                </g>
+              </svg>
+              Verfied Orgs
+            </li>
+            <li class="profile flex items-center gap-6 text-xl font-semibold">
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z"
+                  ></path>
+                </g>
+              </svg>
+              Profile
+            </li>
+            <li
+              class="more text-white flex items-center gap-6 text-xl font-semibold"
+            >
+              <svg
+                class="h-[1.70rem] invert"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"
+              >
+                <g>
+                  <path
+                    d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"
+                  ></path>
+                </g>
+              </svg>
+              More
+            </li>
+          </ul>
+        </div>
+        <div class="ilower flex justify-center">
+          <button
+            class="bg-blue-400 h-14 w-56 rounded-[3rem] text-white ml-16 font-bold"
+          >
+            Post
+          </button>
+        </div>
+      </div>
+
+      <div class="section2 bg-blue-600 h-screen w-[38rem] overflow-auto scrollbar-hide">
+        <div class="post bg-black w-[38rem] h-[15rem]">
+          <div
+            class="foryou w-[38rem] h-[4rem] border border-t-0 border-gray-700 sticky top-0 bg-black" >
+            <ul class="text-white font-bold flex">
+              <li class="w-[19rem] h-[4rem] flex items-center justify-center">
+                For you
+              </li>
+              <li class="w-[19rem] h-[4rem] flex items-center justify-center">
+                Following
+              </li>
+            </ul>
+          </div>
+
+          <div class="posting border border-gray-700 w-[38rem] h-[7.7rem]">
+            <div class="write-sm h-[3.75rem] flex space-x-5 items-center">
+              <img
+                class="h-[2.30rem] w-[2.4rem] rounded-full ml-3"
+                src="download.jpeg"
+                alt=""
+              />
+              <input
+                class="bg-black text-xl"
+                type="text"
+                placeholder="What is happening!?"
+              />
+            </div>
+            <div
+              class="post-sm h-[3.75rem] flex items-center place-content-around space-x-64"
+            >
+              <div class="icons-svg flex ml-12 space-x-1">
+                <img
+                  class="size-6"
+                  src="svgs/image_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  class="size-6"
+                  src="svgs/gif_box_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  class="size-6"
+                  src="svgs/ballot_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  class="size-6"
+                  src="svgs/sentiment_satisfied_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  class="size-6"
+                  src="svgs/calendar_month_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  class="size-6"
+                  src="svgs/ballot_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="bg-blue-600 h-10 w-16 rounded-3xl text-white font-bolds"
+              >
+                Post
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="showpost border border-gray-700 text-blue-500 w-[38rem] h-[3.3rem] flex items-center justify-center font-semibold"
+          >
+            Show 314 posts
+          </div>
+        </div>
+
+        <div class="posts bg-black w-[38rem] border border-gray-600 relative">
+          <div class="h-[3.45rem] text-white flex">
+            <img
+              class="size-10"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WIh1gdvFBA-BD6hwizEmQtKKYggccC_KSw&s"
+              alt=""
+            /> 
+            <div class="contant">
+              <div class="text-p flex">
+                <p class="font-bold">Forbes</p>
+                <p class="text-gray-400">@Forbes·22h</p>
+              </div>
+
+              <div class="text-p1 flex">
+                <p>Live From The 2024 Forbes</p>
+                <p class="text-blue-500">#Under30Summit</p>
+              </div>
+            </div>
+
+            <img
+              class="size-7 absolute top-[0.2rem] right-[0.8rem]"
+              src="svgs/more_horiz_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg "
+              alt=""
+            />
+          </div>
+          <div class="h-[17.5rem] flex justify-center items-center">
+            <img
+              class="h-[17.25rem] w-[33.5rem] rounded-3xl border border-gray-600 ml-3"
+              src="https://imageio.forbes.com/specials-images/imageserve/66f1b07a94a1a816f1ba9a63/JamelToppin-Forbes-U30-2024-Day01-A006-0273/0x0.jpg?format=jpg&height=2000&width=3000"
+              alt=""
+            />
+          </div>
+          <div class="h-[2.5rem] flex items-center">
+            <ul class="flex space-x-3">
+              <li class="flex space-x-[4.5rem] w-[32rem] justify-center">
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/chat_bubble_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  94
+                </div>
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/autorenew_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+
+                  166
+                </div>
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  300
+                </div>
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/bar_chart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+
+                  550k
+                </div>
+              </li>
+              <li class="flex space-x-3">
+                <img
+                  class="size-5"
+                  src="svgs/bookmark_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  class="size-5"
+                  src="svgs/upload_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+
+        <div class="posts bg-black w-[38rem] border border-gray-600 relative">
+          <div class="h-[3.45rem] text-white flex">
+            <img
+              class="size-10"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WIh1gdvFBA-BD6hwizEmQtKKYggccC_KSw&s"
+              alt=""
+            /> 
+            <div class="contant">
+              <div class="text-p flex">
+                <p class="font-bold">Forbes</p>
+                <p class="text-gray-400">@Forbes·22h</p>
+              </div>
+
+              <div class="text-p1 flex">
+                <p>Live From The 2024 Forbes</p>
+                <p class="text-blue-500">#Under30Summit</p>
+              </div>
+            </div>
+
+            <img
+              class="size-7 absolute top-[0.2rem] right-[0.8rem]"
+              src="svgs/more_horiz_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg "
+              alt=""
+            />
+          </div>
+          <div class="h-[17.5rem] flex justify-center items-center">
+            <img
+              class="h-[17.25rem] w-[33.5rem] rounded-3xl border border-gray-600 ml-3"
+              src="https://imageio.forbes.com/specials-images/imageserve/66f1b07a94a1a816f1ba9a63/JamelToppin-Forbes-U30-2024-Day01-A006-0273/0x0.jpg?format=jpg&height=2000&width=3000"
+              alt=""
+            />
+          </div>
+          <div class="h-[2.5rem] flex items-center">
+            <ul class="flex space-x-3">
+              <li class="flex space-x-[4.5rem] w-[32rem] justify-center">
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/chat_bubble_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  94
+                </div>
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/autorenew_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+
+                  166
+                </div>
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/favorite_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  300
+                </div>
+                <div class="text-gray-500 flex justify-center items-center space-x-2">
+                  <img
+                    class="size-5"
+                    src="svgs/bar_chart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+
+                  550k
+                </div>
+              </li>
+              <li class="flex space-x-3">
+                <img
+                  class="size-5"
+                  src="svgs/bookmark_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  class="size-5"
+                  src="svgs/upload_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+      <div
+        class="section3 bg-black h-[48.5rem] w-[32rem] overflow-auto scrollbar-hide space-x-8 space-y-4 relative"
+      >
+        <div
+          class="searchsection sticky top-0 h-[3.9rem] flex items-center bg-black"
+        >
+          <div class="searcharea h-10 w-[23rem] relative ml-7">
+            <input
+              class="searchbar h-10 w-[23rem] rounded-3xl bg-gray-700 text-center"
+              type="text"
+              placeholder="Search"
+            />
+
+            <svg
+              class="h-[1.4rem] invert absolute top-[0.5rem] right-[20rem] z-0"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1bwzh9t r-4wgw6l r-2dysd3"
+            >
+              <g>
+                <path
+                  d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="trending bg-black h-[32rem] w-[23rem] rounded-xl border-gray-600 border flex flex-col space-y-3 space-x-5"
+        >
+          <div class="happen text-white text-xl font-bold p-3">
+            What’s happening
+          </div>
+          <div class="fashon flex space-x-4">
+            <img
+              class="img size-20 rounded-lg object-cover"
+              src="https://pbs.twimg.com/semantic_core_img/1831349644716105728/GzJEZLeB?format=jpg&name=240x240"
+              alt=""
+            />
+            <ul class="h-text text-white">
+              <li class="font-semibold">London Fashion Week 2024</li>
+              <li class="text-gray-400 font-thin text-sm">Fashion·LIVE</li>
+            </ul>
+          </div>
+          <div class="trendshow w-[25rem] space-y-4 overflow-auto">
+            <ul class="text-white relative">
+              <li class="text-gray-400 font-semibold text-sm">
+                Trending in India
+              </li>
+              <li class="font-semibold">#Thalapathy69ByKVNProductions</li>
+              <li class="text-gray-400 font-semibold text-sm">1,889 posts</li>
+              <svg
+                class="invert size-4 absolute top-[1.6rem] right-[4.8rem]"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+              >
+                <g>
+                  <path
+                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                  ></path>
+                </g>
+              </svg>
+            </ul>
+            <ul class="text-white relative">
+              <li class="text-gray-400 font-semibold text-sm">
+                Trending in India
+              </li>
+              <li class="font-semibold">#PriyankaChopr</li>
+              <li class="text-gray-400 font-semibold text-sm">1,889 posts</li>
+              <svg
+                class="invert size-4 absolute top-[1.6rem] right-[4.8rem]"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+              >
+                <g>
+                  <path
+                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                  ></path>
+                </g>
+              </svg>
+            </ul>
+            <ul class="text-white relative">
+              <li class="text-gray-400 font-semibold text-sm">
+                Trending in India
+              </li>
+              <li class="font-semibold">#Tumbbad2</li>
+              <li class="text-gray-400 font-semibold text-sm">1,889 posts</li>
+              <svg
+                class="invert size-4 absolute top-[1.6rem] right-[4.8rem]"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+              >
+                <g>
+                  <path
+                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                  ></path>
+                </g>
+              </svg>
+            </ul>
+            <ul class="text-white relative">
+              <li class="text-gray-400 font-semibold text-sm">Fashion·LIVE</li>
+              <li class="font-semibold">#TajMahal</li>
+              <li class="text-gray-400 font-semibold text-sm">1,889 posts</li>
+              <svg
+                class="invert size-4 absolute top-[1.6rem] right-[4.8rem]"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"
+              >
+                <g>
+                  <path
+                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                  ></path>
+                </g>
+              </svg>
+            </ul>
+          </div>
+
+          <div class="showright text-blue-600">Show more</div>
+        </div>
+
+        <div
+          class="follow bg-black h-[16rem] w-[23rem] rounded-xl border-gray-700 border flex flex-col space-y-3 space-x-6 mb-5"
+        >
+          <div class="happen text-white text-xl font-bold p-3">
+            Who to follow
+          </div>
+          <div class="cardfollow flex space-x-20">
+            <div class="img flex space-x-3">
+              <img
+                class="size-10 rounded-full"
+                src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg"
+                alt=""
+              />
+              <ul class="follow-c-text text-white">
+                <li class="font-semibold text-sm">Bill Gates</li>
+                <li class="font-normal text-sm text-gray-400">@BillGates</li>
+              </ul>
+            </div>
+            <button
+              class="font-bold text-black text-sm bg-white rounded-2xl h-8 w-20"
+            >
+              follow
+            </button>
+          </div>
+          <div class="cardfollow flex space-x-20">
+            <div class="img flex space-x-3">
+              <img
+                class="size-10 rounded-full"
+                src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg"
+                alt=""
+              />
+              <ul class="follow-c-text text-white">
+                <li class="font-semibold text-sm">Bill Gates</li>
+                <li class="font-normal text-sm text-gray-400">@BillGates</li>
+              </ul>
+            </div>
+            <button
+              class="font-bold text-black text-sm bg-white rounded-2xl h-8 w-20"
+            >
+              follow
+            </button>
+          </div>
+          <div class="cardfollow flex space-x-20">
+            <div class="img flex space-x-3">
+              <img
+                class="size-10 rounded-full"
+                src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg"
+                alt=""
+              />
+              <ul class="follow-c-text text-white">
+                <li class="font-semibold text-sm">Bill Gates</li>
+                <li class="font-normal text-sm text-gray-400">@BillGates</li>
+              </ul>
+            </div>
+            <button
+              class="font-bold text-black text-sm bg-white rounded-2xl h-8 w-20"
+            >
+              follow
+            </button>
+          </div>
+          <div class="seem text-blue-500">See more</div>
+        </div>
+        <div class="blank h-8"></div>
+      </div>
+    </div>
+  </body>
+</html>

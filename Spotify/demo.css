@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    background-color: black;
+    width: 25vw;
+    height: 100vh;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.upper {
+    background-color: #121212;
+    border-radius: calc(10px * (100 / 375)); /* 10vw converted to pixels */
+    height: calc(20vh * (100 / 667)); /* 20vh converted to pixels */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc(20px * (100 / 375)); /* 20px converted to pixels */
+    font-size: calc(14px * (100 / 375)); /* 14px converted to pixels */
+    font-weight: 700;
+}
+
+.splogo {
+    width: calc(70px * (100 / 375)); /* 70px converted to pixels */
+    margin-left: calc(20px * (100 / 375)); /* 20px converted to pixels */
+}
+
+.home,
+.search {
+    height: calc(20px * (100 / 667)); /* 20px converted to pixels */
+    filter: invert(0.4);
+}
+
+.home:hover,
+.search:hover {
+    filter: invert(1);
+}
+
+.homeb,
+.searchb {
+    color: rgba(255, 255, 255, 0.667);
+    display: flex;
+    align-items: center;
+    gap: calc(15px * (100 / 375)); /* 15px converted to pixels */
+    margin-left: calc(20px * (100 / 375)); /* 20px converted to pixels */
+    cursor: pointer;
+}
+
+.homeb:hover,
+.searchb:hover {
+    color: rgb(255, 255, 255);
+}
+
+.homeb:hover .home,
+.searchb:hover .search {
+    filter: invert(1);
+}
+
+.lower {
+    height: calc(80vh * (100 / 667)); /* 80vh converted to pixels */
+    background-color: #121212;
+    border-radius: calc(10px * (100 / 375)); /* 10vw converted to pixels */
+    margin-top: calc(2px * (100 / 375)); /* 2px converted to pixels */
+}
+
+.lp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(5vh * (100 / 667)); /* 5vh converted to pixels */
+    gap: calc(11vw * (100 / 375)); /* 11vw converted to pixels */
+    margin-top: calc(10px * (100 / 375)); /* 10px converted to pixels */
+}
+
+.lib {
+    color: #ffffffb8;
+    display: flex;
+    align-items: center;
+    gap: calc(10px * (100 / 375)); /* 10px converted to pixels */
+}
+
+.lib:hover {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: calc(10px * (100 / 375)); /* 10px converted to pixels */
+    cursor: pointer;
+}
+
+.lib:hover .libicon {
+    height: calc(25px * (100 / 375)); /* 25px converted to pixels */
+    filter: invert(1);
+}
+
+.libicon {
+    height: calc(25px * (100 / 375)); /* 25px converted to pixels */
+    filter: invert(0.4);
+}
+
+.plus {
+    height: calc(18px * (100 / 667)); /* 18px converted to pixels */
+    filter: invert(0.4);
+    cursor: pointer;
+}
+
+.plus:hover {
+    filter: invert(1);
+}
+
+.library {
+    height: calc(33vh * (100 / 667)); /* 33vh converted to pixels */
+    margin-top: calc(5px * (100 / 375)); /* 5px converted to pixels */
+}
+
+.set {
+    margin-top: calc(99px * (100 / 667)); /* 99px converted to pixels */
+    margin-left: calc(10px * (100 / 375)); /* 10px converted to pixels */
+    height: calc(25vh * (100 / 667)); /* 25vh converted to pixels */
+}
+
+.poli {
+    height: calc(47% * (100 / 667)); /* 47% converted to pixels */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    grid-template-rows: calc(25px * (100 / 667)); /* 25px converted to pixels */
+}
+
+.poli span {
+    color: white;
+    font-size: calc(10px * (100 / 375)); /* 10px converted to pixels */
+}
+
+.lang {
+    height: calc(70px * (100 / 667)); /* 70px converted to pixels */
+    display: flex;
+    align-items: center;
+}
+
+.eng {
+    background-color: black;
+    height: calc(25px * (100 / 667)); /* 25px converted to pixels */
+    width: calc(70px * (100 / 375)); /* 70px converted to pixels */
+    border-radius: calc(15px * (100 / 375)); /* 15px converted to pixels */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(12px * (100 / 375)); /* 12px converted to pixels */
+    gap: calc(4px * (100 / 375)); /* 4px converted to pixels */
+    border: calc(1px * (100 / 375)) solid rgba(255, 255, 255, 0.414);
+    cursor: pointer;
+}
+
+.eng:hover {
+    border: calc(1px * (100 / 375)) solid rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.eng img {
+    height: calc(15px * (100 / 375)); /* 15px converted to pixels */
+    width: px; /* Correct the value here */
+    filter: invert(1);
+}
+
+.right {
+    background-color: black;
+    width: 75vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.nav {
+    height: calc(8vh * (100 / 667)); /* 8vh converted to pixels */
+    top: 0px;
+    position: sticky;
+    background: transparent;
+    border-radius: calc(10px * (100 / 375)) calc(10px * (100 / 375)) 0px 0px; /* 10px converted to pixels */
+    display: flex;
+    justify-content: space-around;
+    gap: calc(50vw * (100 / 375)); /* 50vw converted to pixels */
+    align-items: center;
+    margin: calc(2px * (100 / 375)); /* 2px converted to pixels */
+}
+
+.arr1,
+.arr2 {
+    height: calc(15px * (100 / 667)); /* 15px converted to pixels */
+    border-radius: calc(40px * (100 / 375)); /* 40px converted to pixels */
+    padding: calc(5px * (100 / 375)); /* 5px converted to pixels */
+    background-color: #f7f4f4;
+}
+
+.arr2 {
+    transform: rotate(180deg);
+}
+
+.ls {
+    display: flex;
+    align-items: center;
+    gap: calc(20px * (100 / 375)); /* 20px converted to pixels */
+}
+
+.log {
+    height: calc(25px * (100 / 667)); /* 25px converted to pixels */
+    width: calc(80px * (100 / 375)); /* 80px converted to pixels */
+    border-radius: calc(25px * (100 / 375)); /* 25px converted to pixels */
+    padding: calc(15px * (100 / 375)); /* 15px converted to pixels */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.log:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.sign {
+    height: calc(25px * (100 / 667)); /* 25px converted to pixels */
+    width: calc(50px * (100 / 375)); /* 50px converted to pixels */
+    background-color: rgb(15, 14, 14);
+    border: none;
+    color: rgb(164, 162, 162);
+    font-weight: 700;
+}
+
+.sign:hover {
+    background-color: rgb(15, 14, 14);
+    border: none;
+    color: white;
+    font-weight: 700;
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.albam {
+    height: calc(150vh * (100 / 667)); /* 150vh converted to pixels */
+    background-color: #121212;
+    margin-left: calc(2px * (100 / 375)); /* 2px converted to pixels */
+}
+
+.pal {
+    height: calc(10vh * (100 / 667)); /* 10vh converted to pixels */
+    color: white;
+    font-size: calc(30px * (100 / 375)); /* 30px converted to pixels */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: calc(30px * (100 / 375)); /* 30px converted to pixels */
+}
+
+.cards {
+    height: calc(131vh * (100 / 667)); /* 131vh converted to pixels */
+    display: flex;
+}
+
+.alucard {
+    height: calc(35vh * (100 / 667)); /* 35vh converted to pixels */
+    width: calc(11vw * (100 / 375)); /* 11vw converted to pixels */
+    margin: calc(5px * (100 / 375)); /* 5px converted to pixels */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: calc(2vh * (100 / 375)); /* 2vh converted to pixels */
+    background: transparent;
+    border-radius: calc(10px * (100 / 375)); /* 10px converted to pixels */
+}
+
+.alucard:hover {
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.cardinner {
+    height: calc(90% * (100 / 667)); /* 90% converted to pixels */
+    width: calc(85% * (100 / 375)); /* 85% converted to pixels */
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(5px * (100 / 375)); /* 5px converted to pixels */
+}
+
+.image {
+    width: 100%;
+    height: 70%;
+    border-radius: calc(10px * (100 / 375)); /* 10px converted to pixels */
+}
+
+.title {
+    height: calc(20px * (100 / 667)); /* 20px converted to pixels */
+    color: rgba(255, 255, 255, 0.749);
+    font-size: calc(13px * (100 / 375)); /* 13px converted to pixels */
+}
+
+.info {
+    font-size: calc(10px * (100 / 375)); /* 10px converted to pixels */
+    color: rgba(255, 255, 255, 0.544);
+    height: calc(30px * (100 / 667)); /* 30px converted to pixels */
+}
+
+.start {
+    height: calc(25px * (100 / 667)); /* 25px converted to pixels */
+    width: calc(25px * (100 / 375)); /* 25px converted to pixels */
+    background-color: green;
+    position: absolute;
+    position: relative;
+}
+
+.invert {
+    filter: invert(1);
+}
